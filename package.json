@@ -1,15 +1,15 @@
 {
-  "name": "cli-usage",
-  "version": "0.1.10",
+  "name": "@startvibe/cli-usage",
+  "version": "0.1.11",
   "description": "Easily show CLI usage from a markdown source file",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mikaelbr/cli-usage.git"
+    "url": "https://github.com/startvibe/cli-usage.git"
   },
   "bugs": {
-    "url": "https://github.com/mikaelbr/cli-usage/issues"
+    "url": "https://github.com/startvibe/cli-usage/issues"
   },
-  "homepage": "https://github.com/mikaelbr/cli-usage",
+  "homepage": "https://github.com/startvibe/cli-usage",
   "main": "index.js",
   "scripts": {
     "test": "mocha tests.js -R spec"
@@ -24,10 +24,10 @@
   "author": "Mikael Brevik",
   "license": "MIT",
   "dependencies": {
-    "marked": "^0.7.0",
-    "marked-terminal": "^3.3.0"
+    "marked": "^17.0.0",
+    "marked-terminal": "^7.3.0"
   },
   "devDependencies": {
-    "mocha": "^6.2.0"
+    "mocha": "^11.7.5"
   }
 }

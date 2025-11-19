@@ -1,4 +1,4 @@
-var TerminalRenderer = require('marked-terminal');
+var { default: TerminalRenderer } = require('marked-terminal');
 var marked = require('marked');
 var path = require('path');
 var fs = require('fs');
@@ -11,6 +11,11 @@ marked.setOptions({
   // Define custom renderer
   renderer: new TerminalRenderer()
 });
+
+// For marked v17+ compatibility
+if (typeof marked !== 'function' && marked.parse) {
+  marked = marked.parse;
+}
 
 module.exports = function (str) {
   if (!isHelp()) {
