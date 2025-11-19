@@ -8,7 +8,7 @@ about paramters, or you can handle that your self using the
 ## Install
 
 ```
-npm install cli-usage
+npm install @startvibe/cli-usage
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ npm install cli-usage
 Most basic usage, just plug in:
 
 ```javascript
-var usage = require('cli-usage');
+var usage = require('@startvibe/cli-usage');
 usage();
 //=> If help-flag is passed, print usage
 //=> and exit with code 0.
@@ -31,14 +31,14 @@ the application will exit with code `0`.
 You can also pass in a filename or a string.
 
 ```javascript
-var usage = require('cli-usage');
+var usage = require('@startvibe/cli-usage');
 usage('./some/path/to/usage.md');
 ```
 
 or
 
 ```javascript
-var usage = require('cli-usage');
+var usage = require('@startvibe/cli-usage');
 usage('# Simple usage');
 ```
 
@@ -49,7 +49,7 @@ it your self.
 
 #### Example
 ```javascript
-var usage = require('cli-usage');
+var usage = require('@startvibe/cli-usage');
 
 console.log(usage.get('# some custom markdown from string'));
 
